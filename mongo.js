@@ -19,8 +19,8 @@ const noteSchema = new mongoose.Schema({
 
 const Note = mongoose.model('Note',noteSchema)
 
-/*const note = new Note({
-    content: 'Leaders must make hard decisions',
+const note = new Note({
+    content: 'Feeling not watch the barca game',
     date: new Date(),
     important: true,
 })
@@ -29,13 +29,14 @@ note.save().then(result=>{
     mongoose.connection.close()
 })
 
-*/
 
+
+/*
 Note.find({}).then(result => {
     result.forEach(note => {
         console.log(note)
     })
     mongoose.connection.close()
 })
-
+*/
 
